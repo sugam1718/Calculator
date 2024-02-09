@@ -14,25 +14,26 @@
 <body>
    
  <div class="box">
+    <form name="calc" action="calc.php" method="POST">
     <div class="title" style="font-family: dancing script;"> LOVE CALCULATOR </div>
     <div class="title1"> -Match your compatibility.</div>
     <div class="boxInside">
         <div class="name">
             <div class="first">
-                Enter your name:<input type="text" style="height:30px; width:220px ; font-size: 20px; background-color: pink;" id="x">
+                Enter your name:<input type="text" style="height:30px; width:220px ; font-size: 20px; background-color: pink;" id="x" name="first_name">
             </div>
             <div class="second">
-                Enter your crush's name:<input type="text" style="height:30px; width:140px ; font-size: 20px; background-color: pink;" id="y">
+                Enter your crush's name:<input type="text" style="height:30px; width:140px ; font-size: 20px; background-color: pink;" id="y" name="second_name">
             </div>
         </div>
         <div class="calculate">
-            <button class="glow-on-hover" onclick="love()" style="color: black; font-size: 20px;"> <div class="left"></div>
-                Calculate
+            <button type="submit" class="glow-on-hover" onclick="love()" style="color: black; font-size: 20px;"> <div class="left"></div>
+                Match
               <div class="right"></div> </button>
-            
+            <input type="reset" value="❌" />
     </div>
     <div class="credit">©️ All rights reserved.<br> Sugam </div>
-    
+   </form>
  </div>
 
 </body>
